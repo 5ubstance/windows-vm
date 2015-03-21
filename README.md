@@ -6,10 +6,6 @@ This is just a quick and dirty Vagrantfile to quickly set-up one of the freely a
 
 You need virtualbox and vagrant to make this work.
 
-## Quick start
-
-`VAGRANT_BOX="<BOX>" vagrant up`
-
 ## Currently available boxes
 
 You can choose from a few boxes (based on http://www.vagrantbox.es/) :
@@ -23,6 +19,14 @@ You can choose from a few boxes (based on http://www.vagrantbox.es/) :
  - win7-ie11
  - win8-ie10
  - win81-ie11
+
+## Quick start
+
+`VAGRANT_BOX="<BOX>" vagrant up`
+
+where BOX stands for one of the available flavors of Windows. Just like this : 
+
+`VAGRANT_BOX="win7-ie8" vagrant up`
 
 ## Windows terms of use
 
