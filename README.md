@@ -26,4 +26,4 @@ You can choose from a few boxes (based on http://www.vagrantbox.es/) :
 
 ## Windows terms of use
 
-The Microsoft Software License Terms for the IE VMs are included in the release notes and supersede any conflicting Windows license terms included in the VMs. By downloading and using this software, you agree to these [license terms][https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2014-01-21.pdf].
+The Microsoft Software License Terms for the IE VMs are included in the release notes and supersede any conflicting Windows license terms included in the VMs. By downloading and using this software, you agree to these [license terms](https://modernievirt.blob.core.windows.net/vhd/virtualmachine_instructions_2014-01-21.pdf).
