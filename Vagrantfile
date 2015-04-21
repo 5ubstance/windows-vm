@@ -3,17 +3,18 @@
 
 # Default box is xp-ie8
 # Possible choices are : xp-ie6, xp-ie8, vista-ie7, win7-ie8, win7-ie9, win7-ie10, win7-ie11, win8-ie10, win81-ie11.
-unless ENV['VAGRANT_BOX'] = ""
+unless ENV['VAGRANT_BOX'].to_s == "" 
   BOX = "#{ENV['VAGRANT_BOX']}"
 else
-  BOX = "xp-ie8"
+  abort("You need to provide a box flavor. See readme.")
 end
 
+puts "Using box #{BOX}"
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.hostname = "#{BOX}"
-  config.vm.box = "#{BOX}"
+  config.vm.box = "windows"
   config.vm.box_url = "http://aka.ms/vagrant-#{BOX}"
   # config.vm.network "forwarded_port", guest: 80, host: 8080
   # config.vm.network "private_network", ip: "192.168.33.10"
